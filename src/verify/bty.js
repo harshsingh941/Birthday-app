@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from 'axios';
 
 function Bty(){
@@ -64,7 +64,18 @@ const datas = {
 
             </div >
             {/* <Link to='/VerifyNo' style={{cursor:'pointer', textDecoration:'none'}}> */}
-                <button style={{backgroundColor:'#737ef6',borderRadius:5,width:302,height:55,left:63,top:300,justifyContent:'center',position:'relative',}} onClick={saveNumber} >Make my b’day special!</button>
+            <div>
+                <Link to='/VerifyNo' style={{cursor:'pointer', textDecoration:'none'}}>
+                <button style={{backgroundColor:'#737ef6',borderRadius:5,width:302,height:55,left:63,top:300,justifyContent:'center',position:'relative',}} onClick={saveNumber} >Next</button>
+                </Link> 
+              
+                  <button style={{backgroundColor:'#737ef6',borderRadius:5,width:302,height:55,left:63,top:150,justifyContent:'center',position:'relative',fontSize:18,color:'#ffffff'}} onClick={saveNumber}>
+                  Make my b’day special!
+
+                  </button>
+                
+            
+            </div> 
 
             
             
